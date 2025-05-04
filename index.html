@@ -1,9 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Title</title>
+      <!-- Meta data section -->
+    <meta charset="utf-8">
+    <meta name="description" content="Cold Hot webpage">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Zoey Kariyal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    
+    <title>Fahrenheit to Celsius</title>
+
   </head>
   <body>
-    <p>Paragraph</p>
+    <div class="card">
+      <h2>Fahrenheit to Celsius</h2>
+      <form method="POST" action="convert.php">
+        <label for="fahrenheit">Temperature in °F:</label>
+        <input type="number" name="fahrenheit" id="fahrenheit" placeholder="Enter °F" required />
+        <button type="submit">Convert</button>
+      </form>
+    </div>
   </body>
 </html>
+
